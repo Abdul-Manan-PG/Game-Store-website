@@ -533,6 +533,94 @@ main {
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.862);
 }
+/*media queries*/
+@media (max-width: 768px) {
+    .games-1 {
+        flex-direction: column;
+    }
+    .left-games-1, .right-games-1 {
+        width: 100%;
+    }
+}
+#searchlogo {
+    font-weight: 700; /* Less bold */
+}
+.rgames-1:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+/* Fading in elements on scroll */
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+/* Hover effect for game tiles */
+.rgames-1 div:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Animation for login card */
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.logincard {
+    animation: slideUp 1s ease-out;
+}
+
+/* Subtle hover animation for buttons */
+#login:hover, .buttons:hover {
+    animation: bounce 0.3s ease;
+}
+
+/* Bounce animation for buttons */
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+/* Dark mode styling */
+.dark-mode {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.dark-mode .navbar {
+    background-color: #333;
+}
+
+.dark-mode .logincard {
+    background-color: #444;
+}
+
+.dark-mode #footer {
+    background-color: #222;
+}
+
+.dark-mode .buttons:hover {
+    color: #00aced;
+    background-color: black;
+}
+
 
 /* image links */
 
