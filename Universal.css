@@ -1,0 +1,977 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.body-main {
+    /* background: rgb(2, 190, 157); */
+    background: linear-gradient(90deg, rgba(2, 190, 157, 1) 0%, rgba(0, 172, 237, 1) 52%, rgba(2, 255, 255, 1) 100%);
+    overflow-x: hidden;
+}
+
+/* header include our navigation bar  */
+
+header {
+    display: block;
+    max-width: 100vw;
+}
+
+/* Nav bar  */
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    width: 94vw;
+    margin: 5vh 3vw 12vh 3vw;
+    gap: 20px;
+    overflow: hidden;
+}
+
+/* logo  */
+
+#logo {
+    width: 300px;
+    display: flex;
+    align-content: center;
+    margin: 2px;
+    padding: 5px 5px 5px 5px;
+    border: 2px black solid;
+    border-radius: 10px;
+    background-color: white;
+    z-index: 2;
+}
+
+/* buttons  */
+
+.navbarbuttons {
+    width: 100%;
+    display: flex;
+    /* background-color: #00aced; */
+    /* background-color: #02749d; */
+    background-color: rgba(0, 0, 0, 0.658);
+    align-content: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+/* for the div of home, library, buttons  */
+
+.leftnav {
+    display: inline-flex;
+    gap: 10px;
+    padding: 5px;
+}
+
+/* for the div of search box and login button */
+
+.rightnav {
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+/* login button styling */
+
+#login {
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    margin-right: 5px;
+}
+
+#login:hover {
+    background-color: #00aced;
+    border: 1px solid black;
+    transition: 900ms;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    z-index: 2;
+}
+
+/* buttons styling */
+
+.buttons {
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    z-index: 10;
+}
+
+.buttons:hover {
+    color: #00aced;
+}
+
+/* search button */
+
+#search {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 270px;
+    border: none;
+    border-radius: 50px;
+}
+
+/* search button icon stylings */
+
+#searchlogo {
+    font-size: 30px;
+    padding-left: 17px;
+    color: rgb(0, 172, 237);
+    font-weight: 1000;
+}
+
+/* input search stylings */
+
+#search input {
+    width: 200px;
+    height: 30px;
+    padding-left: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 23px;
+}
+
+/* Sign in page  */
+
+#login-body {
+    background-color: #02749d;
+}
+
+/* page other then logo div  */
+
+#login-page {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* logo  */
+
+.Login-page-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 55px 0;
+}
+
+/* The div contain the sign page content  */
+
+.logincard {
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.11);
+    width: 400px;
+    height: 400px;
+    background-color: #00aced;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 50px;
+    z-index: 2;
+}
+
+/* Styling of login page card div's elements  */
+
+.logincard h1 {
+    margin: 10% 10% 10px;
+}
+
+.logincard span {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#login-name,
+#login-pass {
+    width: 79%;
+    height: 30px;
+    margin: 1% 10%;
+    padding-left: 1%;
+    border: none;
+}
+
+#sign-in-button {
+    width: 80%;
+    height: 30px;
+    margin-left: 10%;
+    margin-bottom: 17px;
+    background-color: black;
+    border: 2px solid black;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+}
+
+#sign-in-button:hover {
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+/* Games 1 */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2vh;
+}
+
+/* The main games interface of the page i.e layout */
+
+.games-1 {
+    margin: 3vh 3vw 8vh 3vw;
+    max-width: 100vw;
+    width: 94vw;
+    height: 60vh;
+    max-width: 88vw;
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+
+.left-games-1 {
+    width: 61vw;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#left-games-1 div {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 9px;
+    background-color: #00aced;
+}
+
+.right-games-1 {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.rgames-1 {
+    /* width: 32vw; */
+    width: 100%;
+    height: 15vh;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.rgames-1 div {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 9px;
+    background-color: rgba(0, 0, 0, 0.833);
+    display: flex;
+    flex-direction: row;
+    /* overflow-y: auto; */
+    overflow-y: hidden;
+}
+
+.rgames-1 div img {
+    height: 92%;
+    width: 35%;
+    margin: 4px 4px;
+    border-radius: 10px;
+}
+
+.rgames-1 div h1 {
+    align-self: center;
+    margin: 4px 4px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Games 2 tiles */
+
+.games-2 {
+    display: flex;
+    align-items: center;
+    max-width: 90vw;
+    justify-content: center;
+    margin: 8vh 3vw 16vh 3vw;
+    width: 94vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.rgames-2 {
+    width: 17vw;
+    height: 50vh;
+    border: 2px solid black;
+    border-radius: 10px;
+    position: relative;
+    z-index: 10;
+}
+
+.rgames-2 div {
+    position: absolute;
+    width: 100%;
+    border: none;
+    border-radius: 9px;
+    overflow: hidden;
+    width: 100vm;
+    background-color: rgba(0, 0, 0, 0.81);
+    color: white;
+    cursor: pointer;
+    border-radius: 0px 0px 6px 6px;
+    bottom: 0;
+    display: flex;
+}
+
+.rgames-2 div h2 {
+    padding: 5px 1px 5px 10px;
+    text-align: center;
+}
+
+/* footer */
+
+#footer {
+    width: 100vw;
+    height: 20vh;
+    /* background-color: #00aced; */
+    background-color: rgba(0, 0, 0, 0.884);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    padding-left: 3vw;
+    padding-RIGHT: 3vw;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-a {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-a a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-a p {
+    color: white;
+    text-decoration: none;
+}
+
+/* All games tiles stylings and linked images url  */
+
+.games-tiles:hover {
+    cursor: default;
+}
+.left-games-1 ul{
+    list-style-type: circle;
+}
+.game-cover-image {
+    background-color: white;
+    width: 61vw;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.game-1-information {
+    width: 400px;
+    background-color: white;
+    gap: 1vh;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.game-1-information h2 {
+    margin-bottom: 20px;
+    align-self: center;
+}
+
+.game-1-information div p {
+    margin-bottom: 5px;
+    margin-left: 50px;
+}
+
+.game-1-information p {
+    align-self: center;
+}
+
+.game-1-information button {
+    width: 200px;
+    height: 30px;
+    margin: 5px;
+    border: 2px solid black;
+    align-self: center;
+    background-color: #00aced;
+    font-weight: bolder;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.game-1-information button:hover {
+    background-color: black;
+    color: white;
+}
+
+.games-portfolio {
+    margin: 3vh 3vw 8vh 3vw;
+    max-width: 100vw;
+    width: 94vw;
+    height: 200vh;
+    max-width: 88vw;
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+
+.picture-tiles {
+    height: 25%;
+}
+
+.game-details {
+    width: 62vw;
+    border: none;
+}
+
+.game-headings {
+    width: 100vm;
+    margin-top: 350px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 20px;
+    background-color: rgba(0, 0, 0, 0.81);
+    color: white;
+    cursor: pointer;
+    border-radius: 0px 0px 10px 6px;
+    overflow: hidden;
+}
+
+.cover-images {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-decoration: none;
+}
+
+/* Library page stylings */
+
+#library-mygames-h1{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.853);
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-size: xx-large;
+}
+
+#library-mygames{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 3vw;
+    width: 90vw;
+    background-color: rgba(0, 0, 0, 0.892);
+    padding: 20px;
+    /* height: 70vh; */
+    overflow: hidden;
+    gap: 5px;
+    border-radius: 10px;
+}
+.mygames{
+    width: 191px;
+    height: 250px;
+    border: 1px white solid;
+    border-radius: 5px;
+    position: relative;
+    z-index: 10;
+}
+.mygames button{
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.701);
+    color: white;
+    padding: 2px 20px;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+.mygames button:hover{
+    color: #00aced;
+}
+
+/* About page styling*/
+
+.about div{
+    display: flexbox;
+    text-align: center;
+    color: white;
+    margin: 0vh 10vw 15vh 10vw;
+    padding: 5vh 5vw;
+    border-radius: 50px;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.862);
+}
+
+/* image links */
+
+/* main page images links */
+#main-image-home,#library-mygames-game1 {
+    background-image: url(images/GTA\ V\ w1.jpg);
+}
+
+#main-home-div2-game-1 {
+    background-image: url(images/Need\ for\ speed\ w1.jpg);
+}
+
+#main-home-div2-game-3,#library-mygames-game2 {
+    background-image: url(images/Spider-man-w1.jpg);
+}
+
+#main-home-div2-game-4,#library-mygames-game6 {
+    background-image: url(images/cod-w1.jpg);
+}
+
+#main-home-div2-game-5 {
+    background-image: url(images/Assasin-creed-w1.jpg);
+}
+
+#main-home-div2-game-6 {
+    background-image: url(images/rdr-w1.jpg);
+}
+
+#main-home-div2-game-7,#library-mygames-game7 {
+    background-image: url(images/forza-horizon-w1.jpg);
+}
+
+#main-home-div2-game-8,#library-mygames-game8 {
+    background-image: url(images/cyber-punk-w1.jpg);
+}
+
+#main-home-div2-game-9 {
+    background-image: url(images/fortnite-w1.jpeg);
+}
+
+#main-home-div2-game-10,#library-mygames-game4 {
+    background-image: url(images/minecraft-w1.jpg);
+}
+
+#main-home-div2-game-11 {
+    background-image: url(images/lastofus-w1.jpg);
+}
+
+#main-home-div2-game-12,#library-mygames-game3 {
+    background-image: url(images/tekken8-w1.jpg);
+}
+
+#main-home-div2-game-13 {
+    background-image: url(images/HITMAN-W1.jpg);
+}
+
+#main-home-div2-game-14,#library-mygames-game9 {
+    background-image: url(images/gow-w4.jpg);
+}
+
+#main-home-div2-game-15 {
+    background-image: url(images/batman-w5.jpg);
+}
+
+#main-home-div2-game-2 {
+    background-image: url(images/wd-w1.jpg);
+}
+
+/* GAME 0 HTML IMAGE LINKS */
+
+#game-0-cover-image {
+    background-image: url(images/pubg-w2.jpg);
+}
+
+#game-0-picture-1 {
+    background-image: url(images/pubg-w3.jpg);
+}
+
+#game-0-picture-2 {
+    background-image: url(images/pubg-w4.jpg);
+}
+
+#game-0-picture-3,#library-mygames-game5 {
+    background-image: url(images/pubg-w1.jpeg);
+}
+
+#game-0-picture-4 {
+    background-image: url(images/pubg-w5.jpg);
+}
+
+/* GAME 1 HTML IMAGE LINKS */
+
+#game-1-cover-image {
+    background-image: url(images/GTA\ V\ w5.jpg);
+}
+
+#game-1-picture-1 {
+    background-image: url(images/GTA\ V\ w2.jpg);
+}
+
+#game-1-picture-2 {
+    background-image: url(images/GTA\ V\ w4.jpg);
+}
+
+#game-1-picture-3 {
+    background-image: url(images/GTA\ V\ w3.jpg);
+}
+
+#game-1-picture-4 {
+    background-image: url(images/GTA\ V\ w1.jpg);
+}
+
+/* GAME 2 HTML IMAGE LINKS  */
+
+#game-2-cover-image {
+    background-image: url(images/need\ for\ speed\ w5.jpg);
+}
+
+#game-2-picture-1 {
+    background-image: url(images/need\ for\ speed\ w4.jpg);
+}
+
+#game-2-picture-2 {
+    background-image: url(images/need\ for\ speed\ w3.jpg);
+}
+
+#game-2-picture-3 {
+    background-image: url(images/need\ for\ speed\ w2.jpg);
+}
+
+#game-2-picture-4 {
+    background-image: url(images/need\ for\ speed\ w1.jpg);
+}
+
+/* GAME 3 HTML IMAGE LINKS  */
+
+#game-3-cover-image {
+    background-image: url(images/spider-w2.jpg);
+}
+
+#game-3-picture-1 {
+    background-image: url(images/Spider-man-w1.jpg);
+}
+
+#game-3-picture-2 {
+    background-image: url(images/spiderman-w3.jpg);
+}
+
+#game-3-picture-3 {
+    background-image: url(images/spiderman-w5.jpg);
+}
+
+#game-3-picture-4 {
+    background-image: url(images/spider-w2.jpg);
+}
+
+/* GAME 4 HTML IMAGE LINKS  */
+
+#game-4-cover-image {
+    background-image: url(images/cod-w2.jpg);
+}
+
+#game-4-picture-1 {
+    background-image: url(images/cod-w1.jpg);
+}
+
+#game-4-picture-2 {
+    background-image: url(images/cod-w3.jpg);
+}
+
+#game-4-picture-3 {
+    background-image: url(images/cod-w4.jpg);
+}
+
+#game-4-picture-4 {
+    background-image: url(images/cod-w5.jpg);
+}
+
+/* GAME 5 HTML IMAGE LINKS  */
+
+#game-5-cover-image {
+    background-image: url(images/assasin-w2.jpg);
+}
+
+#game-5-picture-1 {
+    background-image: url(images/Assasin-creed-w1.jpg);
+}
+
+#game-5-picture-2 {
+    background-image: url(images/assasin-w3.jpg);
+}
+
+#game-5-picture-3 {
+    background-image: url(images/assasin-w4.jpg);
+}
+
+#game-5-picture-4 {
+    background-image: url(images/assasin-w5.jpg);
+}
+
+/* GAME 6 HTML IMAGE LINKS  */
+
+#game-6-cover-image {
+    background-image: url(images/rdr-w2.jpg);
+}
+
+#game-6-picture-1 {
+    background-image: url(images/rdr-w3.jpg);
+}
+
+#game-6-picture-2 {
+    background-image: url(images/rdr-24.jpg);
+}
+
+#game-6-picture-3 {
+    background-image: url(images/rdr-w1.jpg);
+}
+
+#game-6-picture-4 {
+    background-image: url(images/rdr-w5.jpg);
+}
+
+/* GAME 7 HTML IMAGE LINKS  */
+
+#game-7-cover-image {
+    background-image: url(images/forza-horizon-w2.jpg);
+    background-position: inherit;
+}
+
+#game-7-picture-1 {
+    background-image: url(images/forza-horizon-w1.jpg);
+}
+
+#game-7-picture-2 {
+    background-image: url(images/forza-ho-w4.jpg);
+}
+
+#game-7-picture-3 {
+    background-image: url(images/forza-h-25.jpg);
+}
+
+#game-7-picture-4 {
+    background-image: url(images/forza-horizon-w3.jpg);
+}
+
+/* GAME 8 HTML IMAGE LINKS  */
+
+#game-8-cover-image {
+    background-image: url(images/cyber-punk-w2.jpg);
+}
+
+#game-8-picture-1 {
+    background-image: url(images/cyber-punk-w3.jpg);
+}
+
+#game-8-picture-2 {
+    background-image: url(images/cyber-punk-w4.jpg);
+}
+
+#game-8-picture-3 {
+    background-image: url(images/cyber-punk-w1.jpg);
+}
+
+#game-8-picture-4 {
+    background-image: url(images/cyber-punk-w5.jpg);
+}
+
+/* GAME 9 HTML IMAGE LINKS  */
+
+#game-9-cover-image {
+    background-image: url(images/fortnite-w1.jpeg);
+}
+
+#game-9-picture-1 {
+    background-image: url(images/fortnite-w2.avif);
+}
+
+#game-9-picture-2 {
+    background-image: url(images/fortnite-w3.jpg);
+}
+
+#game-9-picture-3 {
+    background-image: url(images/fortnite-w4.avif);
+}
+
+#game-9-picture-4 {
+    background-image: url(images/fortnite-w1.jpeg);
+}
+
+/* GAME 10 HTML IMAGE LINKS  */
+
+#game-10-cover-image {
+    background-image: url(images/minecraft-w4.jpg);
+}
+
+#game-10-picture-1 {
+    background-image: url(images/minecraft-w1.jpg);
+}
+
+#game-10-picture-2 {
+    background-image: url(images/minecraft-w3.jpg);
+}
+
+#game-10-picture-3 {
+    background-image: url(images/minecraft-w2.jpg);
+}
+
+#game-10-picture-4 {
+    background-image: url(images/minecraft-w5.jpeg);
+}
+
+/* GAME 11 HTML IMAGE LINKS  */
+
+#game-11-cover-image {
+    background-image: url(images/lastofus-w2.jpg);
+}
+
+#game-11-picture-1 {
+    background-image: url(images/lastofus-w3.jpg);
+}
+
+#game-11-picture-2 {
+    background-image: url(images/lastofus-w1.jpg);
+}
+
+#game-11-picture-3 {
+    background-image: url(images/lastofus-w4.jpg);
+}
+
+#game-11-picture-4 {
+    background-image: url(images/lastofus-w5.jpg);
+}
+
+/* GAME 12 HTML IMAGE LINKS  */
+
+#game-12-cover-image {
+    background-image: url(images/tekken8-w2.jpg);
+}
+
+#game-12-picture-1 {
+    background-image: url(images/tekken8-w3.jpg);
+}
+
+#game-12-picture-2 {
+    background-image: url(images/tekken8-w4.jpg);
+}
+
+#game-12-picture-3 {
+    background-image: url(images/tekken8-w5.jpg);
+}
+
+#game-12-picture-4 {
+    background-image: url(images/tekken8-w1.jpg);
+}
+
+/* GAME 13 HTML IMAGE LINKS  */
+
+#game-13-cover-image {
+    background-image: url(images/HITMAN-W2.jpg);
+}
+
+#game-13-picture-1 {
+    background-image: url(images/HITMAN-W3.jpg);
+}
+
+#game-13-picture-2 {
+    background-image: url(images/HITMAN-W4.jpg);
+}
+
+#game-13-picture-3 {
+    background-image: url(images/HITMAN-W5.jpg);
+}
+
+#game-13-picture-4 {
+    background-image: url(images/HITMAN-W1.jpg);
+}
+
+/* GAME 14 HTML IMAGE LINKS  */
+
+#game-14-cover-image {
+    background-image: url(images/gow-w2.jpg);
+}
+
+#game-14-picture-1 {
+    background-image: url(images/gof-w5.jpg);
+}
+
+#game-14-picture-2 {
+    background-image: url(images/gow-w1.jpg);
+}
+
+#game-14-picture-3 {
+    background-image: url(images/gow-w4.jpg);
+}
+
+#game-14-picture-4 {
+    background-image: url(images/gow-w3.jpg);
+}
+
+/* GAME 15 HTML IMAGE LINKS  */
+
+#game-15-cover-image {
+    background-image: url(images/batman-w2.jpg);
+}
+
+#game-15-picture-1 {
+    background-image: url(images/batman-w1.jpg);
+}
+
+#game-15-picture-2 {
+    background-image: url(images/batman-w3.jpg);
+}
+
+#game-15-picture-3 {
+    background-image: url(images/batman-w4.jpg);
+}
+
+#game-15-picture-4 {
+    background-image: url(images/batman-w5.jpg);
+}
+
+/* GAME 16 HTML IMAGE LINKS  */
+
+#game-16-cover-image {
+    background-image: url(/images/wd-w2.jpg);
+}
+
+#game-16-picture-1 {
+    background-image: url(/images/wd-w1.jpg);
+}
+
+#game-16-picture-2 {
+    background-image: url(/images/wd-w3.jpg);
+}
+
+#game-16-picture-3 {
+    background-image: url(/images/wd-w4.jpg);
+}
+
+#game-16-picture-4 {
+    background-image: url(/images/wd-w5.jpg);
+}
