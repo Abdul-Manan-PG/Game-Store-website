@@ -366,12 +366,15 @@ main {
     color: white;
     text-decoration: none;
 }
-
 .footer-a p {
     color: white;
     text-decoration: none;
 }
-
+.footer-a p span{
+    color: white;
+    font-size: 2.5rem;
+    text-decoration: none;
+}
 /* All games tiles stylings and linked images url  */
 
 .games-tiles:hover {
